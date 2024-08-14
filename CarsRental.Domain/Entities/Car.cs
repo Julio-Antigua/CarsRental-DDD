@@ -1,6 +1,7 @@
 ﻿using CarsRental.Domain.Abstractions;
 using CarsRental.Domain.Enums;
 using CarsRental.Domain.ObjectsValue.Cars;
+using CarsRental.Domain.Shared;
 
 namespace CarsRental.Domain.Entities
 {

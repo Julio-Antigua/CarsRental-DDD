@@ -1,8 +1,8 @@
 ﻿using CarsRental.Domain.Entities;
 using CarsRental.Domain.Enums;
-using CarsRental.Domain.ObjectsValue.Cars;
 using CarsRental.Domain.ObjectsValue.Rentals;
 using CarsRental.Domain.ObjectsValue.Users;
+using CarsRental.Domain.Shared;
 using System;
 using System.Collections.Generic;
 using System.Linq;

@@ -1,4 +1,4 @@
-﻿using CarsRental.Domain.ObjectsValue.Cars;
+﻿using CarsRental.Domain.Shared;
 using System;
 using System.Collections.Generic;
 using System.Linq;

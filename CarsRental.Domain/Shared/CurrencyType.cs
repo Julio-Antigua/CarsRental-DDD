@@ -1,4 +1,4 @@
-﻿namespace CarsRental.Domain.ObjectsValue.Cars
+﻿namespace CarsRental.Domain.Shared
 {
     public record CurrencyType
     {

@@ -1,4 +1,4 @@
-﻿namespace CarsRental.Domain.ObjectsValue.Cars
+﻿namespace CarsRental.Domain.Shared
 {
     public record Currency(decimal Amount, CurrencyType CurrencyType)
     {
@@ -11,7 +11,7 @@
             return new Currency(first.Amount + second.Amount, first.CurrencyType);
         }
 
-        public static Currency Zero() => new(0,CurrencyType.None);
+        public static Currency Zero() => new(0, CurrencyType.None);
         public static Currency Zero(CurrencyType CurrencyType) => new(0, CurrencyType);
         public bool IsZero() => this == Zero(CurrencyType);
     }

@@ -12,6 +12,6 @@ namespace CarsRental.Domain.Enums
         Confirmed = 2,
         Decline = 3,
         Canceled = 4,
-        Filled = 5
+        Completed = 5
     }
 }

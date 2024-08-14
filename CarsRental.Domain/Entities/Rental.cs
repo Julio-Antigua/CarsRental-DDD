@@ -2,9 +2,9 @@
 using CarsRental.Domain.Enums;
 using CarsRental.Domain.Events.Rentals;
 using CarsRental.Domain.Exceptions;
-using CarsRental.Domain.ObjectsValue.Cars;
 using CarsRental.Domain.ObjectsValue.Rentals;
 using CarsRental.Domain.Services.Rentals;
+using CarsRental.Domain.Shared;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -99,7 +99,7 @@ namespace CarsRental.Domain.Entities
 
         public Result Decline(DateTime utcNow)
         {
-            if(Status != RentalStatus.Reserved)
+            if (Status != RentalStatus.Reserved)
             {
                 return Result.Failure(RentalErrors.NotReserved);
             }
@@ -119,12 +119,26 @@ namespace CarsRental.Domain.Entities
             }
 
             var currentDate = DateOnly.FromDateTime(utcNow);
-            if(currentDate > Duration!.Start) { return Result.Failure(RentalErrors.AlreadyStarted); }
+            if (currentDate > Duration!.Start) { return Result.Failure(RentalErrors.AlreadyStarted); }
 
             Status = RentalStatus.Canceled;
             CancellationDate = utcNow;
 
             RaiseDomainEvent(new RentalCanceledDomainEvent(Id));
+            return Result.Success();
+        }
+
+        public Result Complete(DateTime utcNow)
+        {
+            if (Status != RentalStatus.Confirmed)
+            {
+                return Result.Failure(RentalErrors.NotConfirmed);
+            }
+
+            Status = RentalStatus.Completed;
+            DateCompleted = utcNow;
+
+            RaiseDomainEvent(new RentalCompletedDomainEvent(Id));
             return Result.Success();
         }
 

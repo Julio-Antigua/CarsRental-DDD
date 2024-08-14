@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "QEGPdyVeYM6ft3KhTnQwb0MS3Qi44yj1+8SiYrYYrYDYYkNZl7lVgPr4qNRJ+sDoOd4EHKQs0atThv9JupaYhg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\JulioAntiguaFabian\\source\\repos\\CarsRental\\CarsRental.Application\\CarsRental.Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\JulioAntiguaFabian\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
