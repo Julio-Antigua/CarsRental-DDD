@@ -1,0 +1,15 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/CarsRental/DesignTimeBuild/.dtbcache.v2
+/.vs/CarsRental/FileContentIndex/2a18166e-0ae1-4920-9adc-96eb07bc6e1e.vsidx
+/.vs/CarsRental/FileContentIndex/3fc8f2ad-23d7-4f6f-8567-39dd3cd0c93d.vsidx
+/.vs/CarsRental/FileContentIndex/4a7dc9af-9a28-4c16-af0b-aa2d9dbdc3ee.vsidx
+/.vs/CarsRental/FileContentIndex/518fdc30-a09b-4798-8914-adbf76bf4d0b.vsidx
+*.vsidx
+/.vs/CarsRental/FileContentIndex/read.lock
+/.vs/CarsRental/v17/.futdcache.v2
+/.vs/ProjectEvaluation/carsrental.metadata.v5.2
+*.bin
+/.vs/ProjectEvaluation/carsrental.projects.v5.2
