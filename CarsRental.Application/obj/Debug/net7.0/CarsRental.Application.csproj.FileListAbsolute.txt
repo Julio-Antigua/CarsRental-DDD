@@ -1,0 +1,15 @@
+C:\Users\JulioAntiguaFabian\source\repos\CarsRental\CarsRental.Application\bin\Debug\net7.0\CarsRental.Application.deps.json
+C:\Users\JulioAntiguaFabian\source\repos\CarsRental\CarsRental.Application\bin\Debug\net7.0\CarsRental.Application.dll
+C:\Users\JulioAntiguaFabian\source\repos\CarsRental\CarsRental.Application\bin\Debug\net7.0\CarsRental.Application.pdb
+C:\Users\JulioAntiguaFabian\source\repos\CarsRental\CarsRental.Application\bin\Debug\net7.0\CarsRental.Domain.dll
+C:\Users\JulioAntiguaFabian\source\repos\CarsRental\CarsRental.Application\bin\Debug\net7.0\CarsRental.Domain.pdb
+C:\Users\JulioAntiguaFabian\source\repos\CarsRental\CarsRental.Application\obj\Debug\net7.0\CarsRental.Application.csproj.AssemblyReference.cache
+C:\Users\JulioAntiguaFabian\source\repos\CarsRental\CarsRental.Application\obj\Debug\net7.0\CarsRental.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\JulioAntiguaFabian\source\repos\CarsRental\CarsRental.Application\obj\Debug\net7.0\CarsRental.Application.AssemblyInfoInputs.cache
+C:\Users\JulioAntiguaFabian\source\repos\CarsRental\CarsRental.Application\obj\Debug\net7.0\CarsRental.Application.AssemblyInfo.cs
+C:\Users\JulioAntiguaFabian\source\repos\CarsRental\CarsRental.Application\obj\Debug\net7.0\CarsRental.Application.csproj.CoreCompileInputs.cache
+C:\Users\JulioAntiguaFabian\source\repos\CarsRental\CarsRental.Application\obj\Debug\net7.0\CarsRental.Application.csproj.CopyComplete
+C:\Users\JulioAntiguaFabian\source\repos\CarsRental\CarsRental.Application\obj\Debug\net7.0\CarsRental.Application.dll
+C:\Users\JulioAntiguaFabian\source\repos\CarsRental\CarsRental.Application\obj\Debug\net7.0\refint\CarsRental.Application.dll
+C:\Users\JulioAntiguaFabian\source\repos\CarsRental\CarsRental.Application\obj\Debug\net7.0\CarsRental.Application.pdb
+C:\Users\JulioAntiguaFabian\source\repos\CarsRental\CarsRental.Application\obj\Debug\net7.0\ref\CarsRental.Application.dll
