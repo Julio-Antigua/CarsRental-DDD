@@ -13,17 +13,17 @@ namespace CarsRental.Domain.Services.Rentals
 {
     public class PriceService
     {
-        public DetailPrice CalculatePrice(Car car, DateRange period)
+        public DetailPrice CalculatePrice(Vehicle vehicle, DateRange period)
         {
-            var currencyType = car.Price!.CurrencyType;
+            var currencyType = vehicle.Price!.CurrencyType;
 
             var pricePerPeriod = new Currency(
-                period.DayCounts * car.Price.Amount,
+                period.DayCounts * vehicle.Price.Amount,
                 currencyType
                 );
             decimal porcentageChange = 0;
 
-            foreach (var accesory in car.Accessories)
+            foreach (var accesory in vehicle.Accessories)
             {
                 porcentageChange += accesory switch
                 {
@@ -47,14 +47,14 @@ namespace CarsRental.Domain.Services.Rentals
             var totalPrice = Currency.Zero();
             totalPrice += pricePerPeriod;
 
-            if (!car!.Maintenance!.IsZero())
+            if (!vehicle!.Maintenance!.IsZero())
             {
-                totalPrice += car.Maintenance;
+                totalPrice += vehicle.Maintenance;
             }
 
             totalPrice += accesoryChange;
 
-            return new DetailPrice(pricePerPeriod, car.Maintenance, accesoryChange,totalPrice);
+            return new DetailPrice(pricePerPeriod, vehicle.Maintenance, accesoryChange,totalPrice);
         }
     }
 }

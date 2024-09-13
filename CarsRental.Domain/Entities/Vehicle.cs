@@ -6,9 +6,9 @@ using CarsRental.Domain.Shared;
 namespace CarsRental.Domain.Entities
 {
     //sealed no permitira que otras clases puedan heredar de esta
-    public sealed class Car : Entity
+    public sealed class Vehicle : Entity
     {
-        public Car(
+        public Vehicle(
             Guid id,
             Model model,
             Vin vin,

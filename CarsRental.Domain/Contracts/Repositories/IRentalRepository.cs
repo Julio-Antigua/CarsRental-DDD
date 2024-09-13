@@ -7,7 +7,7 @@ namespace CarsRental.Domain.Contracts.Repositories
     {
         Task<Rental?> GetByIdAsync(Guid id, CancellationToken cancellationToken = default);
         Task<bool> IsOverlappingAsync(
-            Car car,
+            Vehicle vehicle,
             DateRange duration,
             CancellationToken cancellationToken = default
         );

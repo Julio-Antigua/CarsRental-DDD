@@ -18,7 +18,7 @@ namespace CarsRental.Domain.Entities
     {
         private Rental(
             Guid id,
-            Guid carId,
+            Guid vehicleId,
             Guid userId,
             DateRange duration,
             Currency pricePerPeriod,
@@ -29,7 +29,7 @@ namespace CarsRental.Domain.Entities
             DateTime creationDate
             ) : base(id)
         {
-            CarId = carId;
+            CarId = vehicleId;
             UserId = userId;
             Duration = duration;
             PricePerPeriod = pricePerPeriod;
@@ -55,7 +55,7 @@ namespace CarsRental.Domain.Entities
         public DateTime? CancellationDate { get; private set; }
 
         public static Rental Reserve(
-            Car car,
+            Vehicle vehicle,
             Guid userId,
             DateRange duration,
             DateTime creationDate,
@@ -63,12 +63,12 @@ namespace CarsRental.Domain.Entities
         )
         {
             var detailPrice = priceService.CalculatePrice(
-                car,
+                vehicle,
                 duration
             );
             var rental = new Rental(
                 Guid.NewGuid(),
-                car.Id,
+                vehicle.Id,
                 userId,
                 duration,
                 detailPrice.PricePerPeriod,
@@ -79,7 +79,7 @@ namespace CarsRental.Domain.Entities
                 creationDate
             );
             rental.RaiseDomainEvent(new RentalReservedDomainEvent(rental.Id!));
-            car.LastRentalDate = creationDate;
+            vehicle.LastRentalDate = creationDate;
             return rental;
         }
 
